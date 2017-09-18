@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : spring : first_spring-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/first_spring-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/first_spring-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="first_spring_main/web/Web Gradle : first_spring-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="first_spring_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.zaxxer:HikariCP:2.7.1" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis-spring:1.3.1" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:3.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.3.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:3.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.12/adef7a9e1263298255fdb5cb107ff171d07c82f3/jcl-over-slf4j-1.7.12.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.37/2c378637f6faff77541244e8257b446f04324bd8/mysql-connector-java-5.1.37.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
