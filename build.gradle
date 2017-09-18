@@ -1,6 +1,17 @@
+plugins {
+    id 'io.spring.dependency-management' version '1.0.1.RELEASE'
+
+}
+
+
 group 'spring'
 version '1.0-SNAPSHOT'
 
+dependencyManagement {
+    imports {
+        mavenBom 'org.apache.logging.log4j:log4j-bom:2.9.0'
+    }
+}
 apply plugin: 'java'
 apply plugin: 'war'
 
@@ -21,5 +32,11 @@ dependencies {
     compile 'org.mybatis:mybatis:3.3.0'
     compile 'org.slf4j:jcl-over-slf4j:1.7.12'
     compile 'mysql:mysql-connector-java:5.1.37'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.9.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.9.0'
+    compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.9.0'
+//    compile  'org.slf4j:slf4j-api:1.7.14'
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+//    compile 'org.slf4j:slf4j-log4j12:1.8.0-alpha2'
 }
 

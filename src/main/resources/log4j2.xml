@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <!--<File name="MyFile" fileName="c:/log2.file">-->
+            <!--<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+        <!--</File>-->
+    </Appenders>
+
+    <!--<Appender name="FILE" class="org.apache.logging.log4j.core.appender.RollingFileAppender">-->
+        <!--<param name="file" value="c:/log.file"/>-->
+        <!--<param name="immediateFlush" value="true"/>-->
+        <!--<param name="threshold" value="debug"/>-->
+        <!--<param name="append" value="false"/>-->
+        <!--<layout class="org.apache.logging.log4j.core.layout.PatternLayout">-->
+            <!--<param name="conversionPattern" value="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+        <!--</layout>-->
+    <!--</Appender>-->
+    <Loggers>
+        <logger name="org.apache.http.impl.conn.PoolingHttpClientConnectionManager" level="info"/>
+        <!--<logger name="com.github.ziplet.filter.compression" level="info"/>-->
+        <logger name="org.springframework.web" level="info"/>
+        <logger name="org.springframework.jdbc" level="info"/>
+        <logger name="org.springframework.beans" level="info"/>
+        <logger name="org.springframework.core" level="info"/>
+        <logger name="com.zaxxer.hikari" level="info"/>
+        <logger name="org.mybatis.spring" level="info"/>
+        <!--<logger name="com.github.miemiedev.mybatis.paginator.support.SQLHelp" level="info"/>-->
+        <!--fixme when full push request, -->
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
