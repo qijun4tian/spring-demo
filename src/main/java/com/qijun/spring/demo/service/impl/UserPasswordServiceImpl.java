@@ -1,5 +1,6 @@
 package com.qijun.spring.demo.service.impl;
 
+import com.qijun.spring.demo.entity.UserInfo;
 import com.qijun.spring.demo.mapper.UserPasswordMapper;
 import com.qijun.spring.demo.service.UserPasswordService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ public class UserPasswordServiceImpl implements UserPasswordService {
     @Autowired
     UserPasswordMapper userPasswordMapper;
     @Override
-    public String getUserPassword(String userName) {
+    public UserInfo getUserPassword(String userName) {
         return userPasswordMapper.getUserPassword(userName);
     }
 }

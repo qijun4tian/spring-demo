@@ -1,5 +1,6 @@
 package com.qijun.spring.demo.mapper;
 
+import com.qijun.spring.demo.entity.UserInfo;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -7,5 +8,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface UserPasswordMapper {
-    String getUserPassword(String userName);
+    UserInfo getUserPassword(String userName);
 }
