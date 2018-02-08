@@ -6,5 +6,5 @@ import com.qijun.spring.demo.entity.UserInfo;
  * Created by qijun123 on 2017/9/16.
  */
 public interface UserPasswordService {
-    UserInfo getUserPassword(String userName);
+    void getUserPassword(String userName);
 }

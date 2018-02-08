@@ -1,6 +1,7 @@
 package com.qijun.spring.demo.mapper;
 
 import com.qijun.spring.demo.entity.UserInfo;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,4 +10,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserPasswordMapper {
     UserInfo getUserPassword(String userName);
+    void insert(@Param(value="id") Object id,@Param(value="name")  Object name);
 }

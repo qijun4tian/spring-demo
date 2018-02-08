@@ -16,6 +16,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Builder
 //@XmlRootElement
 public class UserInfo {
-    private int id;
+
+
+    private Object id;
     private String name;
 }

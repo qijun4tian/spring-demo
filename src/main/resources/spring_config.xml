@@ -22,6 +22,19 @@
             </list>
         </property>
     </bean>
+    <bean id="dateBean" class="com.qijun.spring.demo.convert.String2Date">
+        <constructor-arg value="2014-03-04 09:21:20"></constructor-arg>
+    </bean>
+    <bean id="stringToDateConverter" class="com.qijun.spring.demo.convert.String2DateConvert">
+    </bean>
+    <bean id="conversionService"
+          class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <ref bean="stringToDateConverter" />
+            </set>
+        </property>
+    </bean>
 
     <!--数据连接池-->
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">

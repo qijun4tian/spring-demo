@@ -18,8 +18,8 @@ public class DemoController {
     private UserPasswordService userPasswordService;
     @RequestMapping(path ="/greeting/{name}")
 
-    public Object greeting(@PathVariable("name") String name) {
-        log.info("hello world");
-        return userPasswordService.getUserPassword(name);
+    public void greeting(@PathVariable("name") String name) {
+        log.info("hello world");  log.info("hello world");
+         userPasswordService.getUserPassword(name);
     }
 }

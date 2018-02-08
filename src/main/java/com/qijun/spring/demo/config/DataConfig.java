@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
  * Created by qijun123 on 2017/9/17.
  */
 @Configuration
-@ComponentScan(basePackages= {"com.qijun.spring.demo.mapper","com.qijun.spring.demo.service"})
+@ComponentScan(basePackages= "com.qijun.spring.demo.*")
 @ImportResource("classpath:spring_config.xml")
 public class DataConfig {
 }
